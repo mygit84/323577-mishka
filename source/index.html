@@ -33,26 +33,26 @@
     <main class="page-main">
       <h1 class="visually-hidden">Магазин товаров ручной работы для дома "Мишка"</h1>
 
-      <section class="page-main__sectoin products">
+      <section class="promo">
         <h2 class="visually-hidden">Товары</h2>
-        <h3 class="products__slogan title"> Милые штучки ручной работы для дома</h3>
-        <div class="products__wrapper">
-          <ul class="products__list">
-            <li class="products__item products__item--light-green">
-              <a href="#" class="products__title products__title--interior-item">Предметы интерьера</a>
+        <h3 class="promo__slogan title"> Милые штучки ручной работы для дома</h3>
+        <div class="promo__wrapper">
+          <ul class="promo__list">
+            <li class="promo__item promo__item--light-green">
+              <a href="#" class="promo__title promo__title--interior-item">Предметы интерьера</a>
             </li>
-            <li class="products__item products__item--dark-green">
-              <a href="#" class="products__title products__title--toys">Детские игрушки</a>
+            <li class="promo__item promo__item--dark-green">
+              <a href="#" class="promo__title promo__title--toys">Детские игрушки</a>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="page-main__sectoin top-of-the-week">
-        <h3 class="top-of-the-week__title title">Вязаные корзинки</h3>
-        <h2 class="top-of-the-week__subtitle">Товар недели</h2>
-        <p class="top-of-the-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="top-of-the-week__table table-items">
+      <section class="week-product">
+        <h3 class="week-product__title title">Вязаные корзинки</h3>
+        <h2 class="week-product__subtitle">Товар недели</h2>
+        <p class="week-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="week-product__table table-items">
           <tr class="table-items__row row-items row-items--grey">
             <td class="row-items__cell">Цвет:</td>
             <td class="row-items__cell">"Тиффани"/серый</td>
@@ -66,12 +66,12 @@
             <td class="row-items__cell">15 см</td>
           </tr>
         </table>
-        <img class="top-of-the-week__image" src="img/baskets-mobile.jpg" width="100" height="100" alt="Вязаные корзинки">
-        <span class="top-of-the-week__price">Цена: 990руб.</span>
-        <button class="top-of-the-week__btn button" type="button">Заказать</button>
+        <img class="week-product__image" src="img/baskets-mobile.jpg" width="100" height="100" alt="Вязаные корзинки">
+        <span class="week-product__price">Цена: 990руб.</span>
+        <button class="week-product__btn button" type="button">Заказать</button>
       </section>
 
-      <section class="page-main__sectoin about-us">
+      <section class="about-us">
         <h2 class="about-us__title title">Коротко о нас:</h2>
         <div class="about-us__wrapper">
           <ul class="about-us__list">
@@ -97,17 +97,19 @@
         </div>
       </section>
 
-      <section class="page-main__sectoin reviews">
+      <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="reviews__title title">Отзывы</h2>
-          <div class="reviews__container slider__item">
-            <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такое количество лайков, как у популятных инстомамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <b class="reviews__user">Анастасия Красильникова</b>
-            <span class="reviews__email">@misssssiskras</span>
-          </div>
+          <ul class="reviews__container slider__item">
+            <li class="reviews__item">
+              <p class="reviews__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такое количество лайков, как у популятных инстомамочек.
+                В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <b class="reviews__user">Анастасия Красильникова</b>
+              <span class="reviews__email">@misssssiskras</span>
+            </li>
+          </ul>
         </div>
         <p class="reviews__toggle slider__controls">
           <button class="slider__control">Назад</button>
@@ -116,7 +118,7 @@
         <a class="reviews__btn button" href="#">Написать</a>
       </section>
 
-      <section class="page-main__sectoin contacts">
+      <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <table class="contacts__table table-items">
           <tr class="table-items__row row-items">
@@ -128,8 +130,8 @@
             <td class="row-items__cell">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
           </tr>
         </table>
-        <div class="contacts__wrapper-map">
-          <img class="contacts__map-image" src="img/map.jpg" width="100" height="100" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <div class="map">
+          <img class="map-image" src="img/map.jpg" width="100" height="100" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         </div>
         <a class="contacts__btn button" href="#">Напишите нам</a>
       </section>
