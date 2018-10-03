@@ -17,7 +17,7 @@
             <li class="site-list__item">
               <a href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="site-list__item  site-list__item--action">
+            <li class="site-list__item  site-list__item--active">
               <a href="#">Вязание на заказ</a>
             </li>
             <li class="site-list__item site-list__item--search">
@@ -40,72 +40,48 @@
           и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <form class="page-main__form form" method="post" action="https://echo.htmlacademy.ru">
-          <div class="form__container">
-            <span class="form__title">Тип</span>
+          <fieldset class="form__container">
+            <legend class="form__title">Тип</legend>
             <ul class="form__list  radiobutton">
               <li class="radiobutton__item">
-                <label class="radiobutton__label" for="accessories">
-                  <input type="checkbox" name="accessories" id="accessories">
-                  <span class="radiobutton__indicator"></span>
-                  <span class="radiobutton__desc title">Аксессуары для интерьера</span>
-                </label>
+                <label class="radiobutton__label" for="accessories">Аксессуары для интерьера</label>
+                <input type="checkbox" name="accessories" id="accessories">
               </li>
               <li class="radiobutton__item">
-                <label class="radiobutton__label" for="toys">
-                  <input type="checkbox" name="toys" id="toys">
-                  <span class="radiobutton__indicator"></span>
-                  <span class="radiobutton__desc title">Детская игрушка</span>
-                </label>
+                <label class="radiobutton__label" for="toys">Детская игрушка</label>
+                <input type="checkbox" name="toys" id="toys">
               </li>
             </ul>
-          </div>
-          <div class="form__container">
-            <span class="form__title">Цвет</span>
+          </fieldset>
+          <fieldset class="form__container">
+            <legend class="form__title">Цвет</legend>
             <ul class="form__list checkbox">
               <li class="checkbox__item">
-                <label class="checkbox__label" for="white">
-                  <input type="checkbox" name="white" id="white">
-                  <span class="checkbox__indicator"></span>
-                  <span class="checkbox__desc title">Белый</span>
-                </label>
+                <label class="checkbox__label" for="white">Белый</label>
+                <input type="checkbox" name="white" id="white">
               </li>
               <li class="checkbox__item">
-                <label class="checkbox__label" for="gray">
-                  <input type="checkbox" name="gray" id="gray">
-                  <span class="checkbox__indicator"></span>
-                  <span class="checkbox__desc title">Серый</span>
-                </label>
+                <label class="checkbox__label" for="gray">Серый</label>
+                <input type="checkbox" name="gray" id="gray">
               </li>
               <li class="checkbox__item">
-                <label class="checkbox__label" for="tiffany">
-                  <input type="checkbox" name="tiffany" id="tiffany">
-                  <span class="checkbox__indicator"></span>
-                  <span class="checkbox__desc title">"Тиффани"</span>
-                </label>
+                <label class="checkbox__label" for="tiffany">"Тиффани"</label>
+                <input type="checkbox" name="tiffany" id="tiffany">
               </li>
               <li class="checkbox__item">
-                <label class="checkbox__label" for="black">
-                  <input type="checkbox" name="black" id="black">
-                  <span class="checkbox__indicator"></span>
-                  <span class="checkbox__desc title">Черный</span>
-                </label>
+                <label class="checkbox__label" for="black">Черный</label>
+                <input type="checkbox" name="black" id="black">
               </li>
               <li class="checkbox__item">
-                <label class="checkbox__label" for="pink">
-                  <input type="checkbox" name="pink" id="pink">
-                  <span class="checkbox__indicator"></span>
-                  <span class="checkbox__desc title">Розовый</span>
-                </label>
+                <label class="checkbox__label" for="pink">Розовый</label>
+                <input type="checkbox" name="pink" id="pink">
               </li>
               <li class="checkbox__item">
-                <label class="checkbox__label" for="orange">
-                  <input type="checkbox" name="orange" id="orange">
-                  <span class="checkbox__indicator"></span>
-                  <span class="checkbox__desc title">Оранжевый</span>
-                </label>
+                <label class="checkbox__label" for="orange">Оранжевый</label>
+                <input type="checkbox" name="orange" id="orange">
               </li>
             </ul>
-          </div>
+          </fieldset>
           <div class="form__container">
             <span class="form__title">ФИО</span>
             <p>
