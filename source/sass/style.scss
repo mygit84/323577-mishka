@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("opensans.woff2") format("woff2"),
-  url("opensans.woff") format("woff");
+       url("opensans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open San";
   src: url("opensansbold.woff2") format("woff2"),
-  url("opensansbold.woff") format("woff");
+       url("opensansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 
 html,
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: normal;
   line-height: 24px;
