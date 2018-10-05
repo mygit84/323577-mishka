@@ -3,28 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
+    <link href="../css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="100" height="100" alt="Мишка">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="90" height="38" alt="Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item  site-list__item--active">
-              <a href="#">Вязание на заказ</a>
+              <a class="site-list__link" href="#">Вязание на заказ</a>
             </li>
             <li class="site-list__item site-list__item--search">
-              <a href="#">Поиск по сайту</a>
+              <a class="site-list__link" href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item site-list__item--basket">
-              <a href="#">Корзина: пока пуста</a>
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -44,12 +45,12 @@
             <legend class="form__title">Тип</legend>
             <ul class="form__list  radiobutton">
               <li class="radiobutton__item">
+                <input class="radiobutton__input" type="checkbox" name="accessories" id="accessories">
                 <label class="radiobutton__label" for="accessories">Аксессуары для интерьера</label>
-                <input type="checkbox" name="accessories" id="accessories">
               </li>
               <li class="radiobutton__item">
+                <input class="radiobutton__input" type="checkbox" name="toys" id="toys">
                 <label class="radiobutton__label" for="toys">Детская игрушка</label>
-                <input type="checkbox" name="toys" id="toys">
               </li>
             </ul>
           </fieldset>
@@ -57,43 +58,43 @@
             <legend class="form__title">Цвет</legend>
             <ul class="form__list checkbox">
               <li class="checkbox__item">
-                <label class="checkbox__label" for="white">Белый</label>
                 <input type="checkbox" name="white" id="white">
+                <label class="checkbox__label" for="white">Белый</label>
               </li>
               <li class="checkbox__item">
-                <label class="checkbox__label" for="gray">Серый</label>
                 <input type="checkbox" name="gray" id="gray">
+                <label class="checkbox__label" for="gray">Серый</label>
               </li>
               <li class="checkbox__item">
-                <label class="checkbox__label" for="tiffany">"Тиффани"</label>
                 <input type="checkbox" name="tiffany" id="tiffany">
+                <label class="checkbox__label" for="tiffany">"Тиффани"</label>
               </li>
               <li class="checkbox__item">
-                <label class="checkbox__label" for="black">Черный</label>
                 <input type="checkbox" name="black" id="black">
+                <label class="checkbox__label" for="black">Черный</label>
               </li>
               <li class="checkbox__item">
-                <label class="checkbox__label" for="pink">Розовый</label>
                 <input type="checkbox" name="pink" id="pink">
+                <label class="checkbox__label" for="pink">Розовый</label>
               </li>
               <li class="checkbox__item">
-                <label class="checkbox__label" for="orange">Оранжевый</label>
                 <input type="checkbox" name="orange" id="orange">
+                <label class="checkbox__label" for="orange">Оранжевый</label>
               </li>
             </ul>
           </fieldset>
           <div class="form__container">
             <span class="form__title">ФИО</span>
             <p>
-              <label class="form__label title" for="name">Имя:</label>
+              <label class="form__label" for="name">Имя:</label>
               <input class="form__input" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
             </p>
             <p>
-              <label class="form__label title" for="surname">Фамилия:</label>
+              <label class="form__label" for="surname">Фамилия:</label>
               <input class="form__input form__input--border-bold" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
             </p>
             <p>
-              <label class="form__label title" for="patronymic">Отчество:</label>
+              <label class="form__label" for="patronymic">Отчество:</label>
               <input class="form__input" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
             </p>
             <p>
@@ -106,7 +107,7 @@
             </p>
             <p>
               <label class="form__title" for="additionally">Доп</label>
-              <textarea class="form__input" id="additionally" name="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="form__textarea" id="additionally" name="additionally" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </p>
           </div>
           <span class="form__required">*Поля обязательны для заполнения</span>
@@ -119,19 +120,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="socisl__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме<span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твитере</a>
+            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твитере</span></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
 

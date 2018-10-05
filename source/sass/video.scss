@@ -1,0 +1,52 @@
+.video {
+  width: 260px;
+  margin-bottom: 58px;
+  padding: 0 30px;
+
+  &__title {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+    padding: 35px 43px 25px 90px;
+    border: 2px solid #ececec;
+    border-bottom: none;
+  }
+
+  &__wrapper {
+    width: 260px;
+    height: 150px;
+    background-image: url("../img/video-mobile@1x.jpg");
+  }
+
+  &__btn-play {
+    width: 90px;
+    height: 67px;
+    margin: 45px 80px;
+    background-color: #62d1ba;
+    border: 5px solid #ffffff;
+    border-radius: 20%;
+  }
+
+  &__box {
+    border: 2px solid #ececec;
+    border-top: none;
+  }
+
+  &__text {
+    display: block;
+    font-size: 13px;
+    color: #444444;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    padding-left: 36px;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 35px;
+    margin-bottom: 30px;
+    padding: 16px 18px;
+    text-align: center;
+  }
+}

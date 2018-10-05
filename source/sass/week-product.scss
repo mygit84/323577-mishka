@@ -1,0 +1,36 @@
+.week-product {
+  width: 260px;
+  padding: 30px 30px;
+
+  &__table {
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #63d1bb;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: #444444;
+  }
+
+  &__image {
+    width: 260px;
+    height: 315px;
+  }
+
+  &__price {
+    font-size: 17px;
+    font-weight: bold;
+    color: #444444;
+  }
+
+  &__btn {
+    padding: 14px 85px;
+  }
+}

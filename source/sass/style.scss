@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("opensans.woff2") format("woff2"),
+  url("opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("opensansbold.woff2") format("woff2"),
+  url("opensansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+html,
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 24px;
+
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@import "page-header.scss";
+@import "main-nav.scss";
+@import "site-list.scss";
+@import "page-main.scss";
+@import "promo.scss";
+@import "slogan.scss";
+@import "title.scss";
+@import "week-product.scss";
+@import "table-items.scss";
+@import "row-items.scss";
+@import "about-us.scss";
+@import "reviews.scss";
+@import "slider.scss";
+@import "contacts.scss";
+@import "map.scss";
+@import "button.scss";
+@import "catalog.scss";
+@import "product.scss";
+@import "video.scss";
+@import "form.scss";
+@import "radiobutton.scss";
+@import "checkbox.scss";
+@import "page-footer.scss";
+@import "social.scss";
+@import "copyright.scss";
+@import "modal.scss";
+@import "modal-basket";
+@import "visually-hidden.scss";
