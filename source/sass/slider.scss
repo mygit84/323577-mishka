@@ -1,0 +1,13 @@
+.slider {
+  &__controls {
+    width: 260px;
+  }
+
+  &__control {
+    width: 128px;
+    height: 48px;
+    margin-bottom: 38px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+  }
+}

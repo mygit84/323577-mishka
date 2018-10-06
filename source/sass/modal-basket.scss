@@ -1,0 +1,45 @@
+.modal-basket {
+  width: 260px;
+  text-align: center;
+
+  &__wrapper {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  &__list {
+    width: 260px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__text {
+    font-size: 17px;
+    font-weight: bold;
+    color: #444444;
+  }
+
+  &__btn {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 16px 85px;
+    color: #ffffff;
+    background-color: #63d1bb;
+    border: none;
+  }
+}

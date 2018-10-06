@@ -1,0 +1,35 @@
+.reviews {
+  width: 260px;
+  margin-bottom: 52px;
+  padding: 0 30px;
+
+  &__wrapper {
+    margin-bottom: 35px;
+  }
+
+  &__container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  &__user {
+    font-size: 17px;
+  }
+
+  &__email {
+    font-size: 17px;
+    color: #444444;
+  }
+
+  &__btn {
+    padding: 14px 81px;
+  }
+}

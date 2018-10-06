@@ -1,0 +1,18 @@
+.row-items {
+  &__cell {
+    width: 98px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #444444;
+  }
+
+  &__cell--green {
+    border-bottom: 1px solid #62d1ba;
+  }
+}
+
+.row-items--grey {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+}

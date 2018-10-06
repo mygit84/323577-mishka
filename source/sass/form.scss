@@ -1,0 +1,53 @@
+.form {
+  width: 320px;
+  margin-bottom: 55px;
+
+  &__container {
+    border: none;
+    margin: 30px;
+    padding: 0;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__title {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #63d1bb;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  &__label {
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  &__input {
+    font-family: inherit;
+    border: none;
+    border-bottom: 2px solid #000000;
+  }
+
+  &__textarea {
+    border: 2px solid #000000;
+  }
+
+  &__required {
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  &__btn {
+    margin: 30px 0 0 30px;
+    padding: 17px 45px;
+  }
+}

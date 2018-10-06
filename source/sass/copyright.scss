@@ -1,0 +1,15 @@
+.copyright {
+  width: 260px;
+
+  &__text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__link {
+    display: block;
+    width: 30px;
+    height: 40px;
+    background-color: #63d1bb;
+  }
+}
