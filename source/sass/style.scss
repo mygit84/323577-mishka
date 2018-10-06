@@ -12,9 +12,9 @@
   font-style: normal;
 }
 
-
 html,
 body {
+  min-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -22,10 +22,11 @@ body {
 
   background-color: #ffffff;
   color: #000000;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
+@import "container";
 @import "page-header.scss";
 @import "main-nav.scss";
 @import "site-list.scss";

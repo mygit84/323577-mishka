@@ -1,5 +1,56 @@
 .page-header {
-  &__logo {
-    width: 95px;
+  width: auto;
+  background-color: #ffffff;
+}
+
+.page-header__logo {
+  display: block;
+  width: 86px;
+  margin: 21px auto;
+  padding: 0 85px;
+}
+
+.page-header__desc {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .page-header {
+    display: flex;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .page-header__logo {
+    width: 111px;
+    height: 45px;
+    margin: 22px 209px 20px 0;
+    padding: 0;
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  .page-header__logo-image {
+    display: none;
+  }
+
+  .page-header__desc {
+    content: "";
+    position: absolute;
+    top: 107px;
+    right: 61px;
+    display: block;
+    color: #444444;
+  }
+}
+
+@media (min-width: 1250px) {
+
+  .page-header__logo {
+    width: 250px;
+    height: 80px;
+    margin: 10px 0 0 450px;
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
   }
 }

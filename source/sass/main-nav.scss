@@ -1,5 +1,35 @@
 .main-nav {
-  &__list {
-    width: 320px;
+  position: relative;
+}
+.main-nav__list {
+    width: auto;
+}
+
+.main-nav__wrapper {
+  border-top: 1px solid #ececec;
+}
+
+.main-nav__toggle {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -50px;
+  left: 267px;
+  font-size: 0;
+}
+
+@media (min-width: 768px) {
+
+  .main-nav {
+    width: 348px;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }
