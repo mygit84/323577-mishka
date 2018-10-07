@@ -8,3 +8,21 @@
   color: #000000;
   font-weight: bold;
 }
+
+@media (min-width: 768px) {
+  .slogan {
+    width: 496px;
+    margin: 155px 86px 370px 86px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .slogan {
+    width: 610px;
+    margin: 155px 220px 350px 220px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

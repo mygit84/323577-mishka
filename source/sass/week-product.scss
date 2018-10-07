@@ -1,36 +1,135 @@
 .week-product {
   width: 260px;
   padding: 30px 30px;
+}
 
-  &__table {
-    margin-bottom: 40px;
+.week-product__table {
+  margin-bottom: 40px;
+}
+
+.week-product__subtitle {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #63d1bb;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.week-product__text {
+  color: #444444;
+}
+
+.week-product__image {
+  width: 260px;
+  height: 315px;
+}
+
+.week-product__price {
+  font-size: 17px;
+  font-weight: bold;
+  color: #444444;
+}
+
+.week-product__btn {
+  padding: 14px 85px;
+}
+
+@media (min-width: 768px) {
+
+  .week-product {
+    width: 668px;
+    padding: 50px 50px;
   }
 
-  &__subtitle {
+  .week-product__wrapper--row {
+    display: flex;
+    width: 668px;
+    margin-bottom: 55px;
+    justify-content: space-around;
+  }
+
+  .week-product__wrapper--col {
+    display: flex;
+    width: 668px;
+    flex-direction: column;
+    background-image: url("../img/triple-set-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .week-product__title {
+    width: 569px;
+  }
+
+  .week-product__subtitle {
+    display: inline-block;
+    line-height: 17px;
+    margin-top: 10px;
+    margin-right: -35px;
+  }
+
+  .week-product__image {
+    display: none;
+  }
+
+  .week-product__text {
+    display: inline-block;
+    width: 282px;
+    margin: -5px 0 30px 0;
     font-size: 17px;
-    font-weight: bold;
-    line-height: 20px;
-    color: #63d1bb;
-    margin: 0;
-    text-transform: uppercase;
+    line-height: 30px;
+  }
+  .week-product__table {
+    width: 289px;
+    margin-right: 45px;
+  }
+  .week-product__price {
+    width: 289px;
+    margin-right: 45px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .week-product__btn {
+    width: 289px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1250px) {
+
+  .week-product {
+    width: 1050px;
+    padding: 80px 100px;
   }
 
-  &__text {
-    color: #444444;
+  .week-product__wrapper {
+    flex-direction: column;
+    background-image: url("../img/triple-set-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    &--row {
+      flex-direction: row-reverse;
+      margin: 55px 0 50px 47px;
+      background-image: none;
+    }
+
+    &--col {
+      background-image: none;
+      margin-left: 175px;
+    }
   }
 
-  &__image {
-    width: 260px;
-    height: 315px;
+  .week-product__title {
+    margin-left: 30px;
   }
 
-  &__price {
-    font-size: 17px;
-    font-weight: bold;
-    color: #444444;
+  .week-product__subtitle {
+    margin-top: 13px;
   }
 
-  &__btn {
-    padding: 14px 85px;
+  .week-product__table {
+    margin-bottom: 110px;
   }
 }

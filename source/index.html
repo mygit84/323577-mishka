@@ -45,7 +45,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Магазин товаров ручной работы для дома "Мишка"</h1>
 
-      <section class="promo">
+      <section class="promo container">
         <h2 class="visually-hidden">Товары</h2>
         <h3 class="promo__slogan slogan"> Милые штучки ручной работы для дома</h3>
         <div class="promo__wrapper">
@@ -61,26 +61,32 @@
       </section>
 
       <section class="week-product">
-        <h3 class="week-product__title title">Вязаные корзинки</h3>
-        <h2 class="week-product__subtitle">Товар недели</h2>
-        <p class="week-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="week-product__table table-items">
-          <tr class="table-items__row row-items row-items--grey">
-            <td class="row-items__cell">Цвет:</td>
-            <td class="row-items__cell">"Тиффани"/серый</td>
-          </tr>
-          <tr class="table-items__row row-items row-items--grey">
-            <td class="row-items__cell">Диаметр:</td>
-            <td class="row-items__cell">25 см</td>
-          </tr>
-          <tr class="table-items__row row-items row-items--grey">
-            <td class="row-items__cell">Высота:</td>
-            <td class="row-items__cell">15 см</td>
-          </tr>
-        </table>
-        <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" width="100" height="100" alt="Вязаные корзинки">
-        <span class="week-product__price">Цена: 990руб.</span>
-        <button class="week-product__btn button" type="button">Заказать</button>
+        <div class="week-product__wrapper">
+          <div class="week-product__wrapper week-product__wrapper--row">
+            <h3 class="week-product__title title">Вязаные корзинки</h3>
+            <h2 class="week-product__subtitle">Товар недели</h2>
+          </div>
+          <div class="week-product__wrapper week-product__wrapper--col">
+            <p class="week-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="week-product__table table-items">
+              <tr class="table-items__row row-items row-items--grey">
+                <td class="row-items__cell">Цвет:</td>
+                <td class="row-items__cell">"Тиффани"/серый</td>
+              </tr>
+              <tr class="table-items__row row-items row-items--grey">
+                <td class="row-items__cell">Диаметр:</td>
+                <td class="row-items__cell">25 см</td>
+              </tr>
+              <tr class="table-items__row row-items row-items--grey">
+                <td class="row-items__cell">Высота:</td>
+                <td class="row-items__cell">15 см</td>
+              </tr>
+            </table>
+            <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" width="100" height="100" alt="Вязаные корзинки">
+            <span class="week-product__price">Цена: 990руб.</span>
+            <button class="week-product__btn button" type="button">Заказать</button>
+          </div>
+        </div>
       </section>
 
       <section class="about-us">
