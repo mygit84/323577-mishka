@@ -124,8 +124,10 @@
                 Я молодая мама, но всё равно фотографии не набирали и близко такое количество лайков, как у популятных инстомамочек.
                 В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
               </p>
-              <b class="reviews__user">Анастасия Красильникова</b>
-              <span class="reviews__email">@misssssiskras</span>
+              <div class="reviews__inner">
+                <b class="reviews__user">Анастасия Красильникова</b>
+                <span class="reviews__email">@misssssiskras</span>
+              </div>
             </li>
           </ul>
         </div>
@@ -138,18 +140,20 @@
 
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__table table-items">
-          <tr class="table-items__row row-items">
-            <td class="row-items__cell">e-mail:</td>
-            <td class="row-items__cell row-items__cell--green">info@mimimishkashop.ru</td>
-          </tr>
-          <tr class="table-items__row row-items">
-            <td class="row-items__cell">адрес:</td>
-            <td class="row-items__cell">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-          </tr>
-        </table>
-        <div class="map">
-          <img class="map-image" src="img/map-mobile@1x.jpg" width="100" height="100" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <div class="contacts__wrapper">
+          <table class="contacts__table table-items table-items--contacts container">
+            <tr class="table-items__row row-items">
+              <td class="row-items__cell">e-mail:</td>
+              <td class="row-items__cell row-items__cell--green">info@mimimishkashop.ru</td>
+            </tr>
+            <tr class="table-items__row row-items">
+              <td class="row-items__cell">адрес:</td>
+              <td class="row-items__cell">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            </tr>
+          </table>
+          <div class="map">
+            <img class="map-image" src="img/map-mobile@1x.jpg" width="100" height="100" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          </div>
         </div>
         <a class="contacts__btn button" href="#">Напишите нам</a>
       </section>
@@ -157,24 +161,29 @@
 
 
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме<span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твитере</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
-      </div>
-    </footer>
+      <div class="page-footer__wrapper container">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="35" alt="Мишка">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме<span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твитере</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+          </div>
+        </div>
+      </footer>
 
 
     <section class="modal modal-basket">

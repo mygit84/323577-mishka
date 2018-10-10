@@ -27,7 +27,6 @@
 
   .about-us {
     width: 668px;
-    margin: 70px 0 40px 0;
     padding: 0 50px;
   }
 
@@ -37,7 +36,7 @@
 
   .about-us__list {
     width: 668px;
-    height: 535px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -63,11 +62,17 @@
   }
 
   .about-us__title {
-    margin-left: 173px;
+    margin-left: 172px;
   }
 
   .about-us__wrapper {
-    margin-left: 173px;
+    width: 528px;
+    margin-left: 172px;
+  }
+
+  .about-us__list {
+    width: 528px;
+    height: 500px;
   }
 
   .about-us__item {

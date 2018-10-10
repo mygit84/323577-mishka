@@ -19,8 +19,8 @@
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
-  width: 260px;
-  padding: 28px 30px;
+  width: auto;
+  padding: 25px 185px 25px 30px;
   background-color: #3bb09d;
 
   &--light-green {
@@ -57,6 +57,7 @@
 
   .promo {
     width: 1050px;
+    margin-bottom: 80px;
     background-image: url("../img/hero-desktop@1x.jpg");
   }
 

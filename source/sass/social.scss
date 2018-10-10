@@ -1,8 +1,14 @@
 .social {
   width: 260px;
+  margin-bottom: 25px;
 
   &__list {
+    width: 145px;
+    margin: 0 auto;
+    padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-around;
   }
 
   &__link {
@@ -11,5 +17,16 @@
     height: 36px;
     margin-bottom: 10px;
     background-color: #000000;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .social__list {
+    width: 150px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
   }
 }

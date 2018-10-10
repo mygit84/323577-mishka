@@ -1,10 +1,11 @@
 .week-product {
   width: 260px;
+  margin-bottom: 40px;
   padding: 30px 30px;
 }
 
 .week-product__table {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .week-product__subtitle {
@@ -23,12 +24,16 @@
 .week-product__image {
   width: 260px;
   height: 315px;
+  margin-bottom: 15px;
 }
 
 .week-product__price {
+  display: block;
+  margin-bottom: 25px;
   font-size: 17px;
   font-weight: bold;
   color: #444444;
+  text-align: center;
 }
 
 .week-product__btn {
@@ -100,14 +105,17 @@
 
   .week-product {
     width: 1050px;
-    padding: 80px 100px;
+    margin-bottom: 155px;
+    padding: 0 100px;
   }
 
   .week-product__wrapper {
+    display: flex;
     flex-direction: column;
     background-image: url("../img/triple-set-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: right;
+    background-size: 50% 100%;
 
     &--row {
       flex-direction: row-reverse;

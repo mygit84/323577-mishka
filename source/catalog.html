@@ -3,42 +3,52 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
-    <link href="../css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="90" height="38" alt="Мишка">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#">Каталог товаров</a>
+            <li class="site-list__item site-list__item--catalog site-list__item--active">
+              <a class="site-list__link site-list__link--catalog">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            <li class="site-list__item site-list__item--order">
+              <a class="site-list__link site-list__link--order" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--new">
+              <a class="site-list__link" href="#">Новые поступления</a>
+            </li>
+            <li class="site-list__item site-list__item--sale">
+              <a class="site-list__link" href="#">Распродажа</a>
             </li>
             <li class="site-list__item site-list__item--search">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
+              <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item site-list__item--basket">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+              <a class="site-list__link site-list__link--basket" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
       </nav>
+      <span class="page-header__desc">Бесплатная доставка по России</span>
     </header>
 
     <main class="page-main">
       <h1 class="page-main__title">Каталог товаров</h1>
 
-      <section class="catalog">
+      <section class="catalog container">
         <ul class="catalog__list">
           <li class="catalog__item product">
-            <a class="product__link" href="#">
+            <a class="product__link product__link--hare" href="#">
               <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="100" height="100" alt="Зайчик-попрыгайчик">
             </a>
             <div class="product__box">
@@ -51,7 +61,7 @@
             </div>
           </li>
           <li class="page-main__item product">
-            <a class="product__link" href="#">
+            <a class="product__link product__link--bowl" href="#">
               <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" width="100" height="100" alt="Корзина для белья">
             </a>
             <div class="product__box">
@@ -64,7 +74,7 @@
             </div>
           </li>
           <li class="page-main__item product">
-            <a class="product__link" href="#">
+            <a class="product__link product__link--toys" href="#">
               <img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="100" height="100" alt="Большая корзина для игрушек">
             </a>
             <div class="product__box">
@@ -80,9 +90,11 @@
       </section>
 
       <section class="video">
-        <h2 class="video__title">Процесс производства</h2>
-        <div class="video__wrapper">
-          <button class="video__btn-play">Смотреть</button>
+        <div class="video__container container">
+          <h2 class="video__title">Процесс производства</h2>
+          <div class="video__wrapper">
+            <button class="video__btn-play">Смотреть</button>
+          </div>
         </div>
         <div class="video__box">
           <p class="video__text">
@@ -94,23 +106,28 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме<span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твитере</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
-      </div>
+      <div class="page-footer__wrapper container">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="35" alt="Мишка">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме<span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твитере</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+          </div>
+        </div>
     </footer>
 
     <section class="modal modal-basket">

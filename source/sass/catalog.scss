@@ -1,11 +1,38 @@
 .catalog {
   width: 320px;
   margin-bottom: 30px;
+}
 
-  &__list {
-    width: 260px;
-    margin: 0;
-    padding: 0 30px;
-    list-style: none;
+.catalog__list {
+  width: 260px;
+  margin: 0;
+  padding: 0 30px;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+
+  .catalog {
+    width: 668px;
+    margin-bottom: 55px;
+  }
+
+  .catalog__list {
+    padding: 0;
+  }
+}
+
+@media(min-width: 1150px) {
+
+  .catalog {
+    width: 1050px;
+    margin-bottom: 5px;
+  }
+
+  .catalog__list {
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
