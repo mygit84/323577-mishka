@@ -1,18 +1,17 @@
 .radiobutton__label {
   font-size: 17px;
   font-weight: bold;
-  }
+}
 
-  .radiobutton__input {
-    display: none;
-  }
+.radiobutton__input {
+  display: none;
+}
 
-@media (min-width:768px) {
-
+@media (min-width: 768px) {
   .radiobutton__item {
     width: 421px;
-    margin-bottom: 35px;
-    padding: 15px 0 0 80px;
+    margin-bottom: 37px;
+    padding: 15px 0 0 25px;
   }
 
   .radiobutton__label {
@@ -21,17 +20,7 @@
   }
 }
 
-@media (min-width:768px) {
-
-  .radiobutton__item {
-    width: 421px;
-    margin-bottom: 37px;
-    padding: 15px 0 0 25px;
-  }
-}
-
-@media (min-width:1150px) {
-
+@media (min-width: 1150px) {
   .radiobutton__label {
     padding-left: 54px;
   }

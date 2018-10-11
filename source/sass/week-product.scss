@@ -41,7 +41,6 @@
 }
 
 @media (min-width: 768px) {
-
   .week-product {
     width: 668px;
     padding: 50px 50px;
@@ -85,16 +84,19 @@
     font-size: 17px;
     line-height: 30px;
   }
+
   .week-product__table {
     width: 289px;
     margin-right: 45px;
   }
+
   .week-product__price {
     width: 289px;
     margin-right: 45px;
     font-size: 20px;
     text-align: center;
   }
+
   .week-product__btn {
     width: 289px;
     margin-top: 30px;
@@ -102,7 +104,6 @@
 }
 
 @media (min-width: 1250px) {
-
   .week-product {
     width: 1050px;
     margin-bottom: 155px;

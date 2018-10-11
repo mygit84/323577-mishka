@@ -8,7 +8,6 @@
 }
 
 @media (min-width: 768px) {
-
   .checkbox {
     width: 501px;
     display: flex;
@@ -30,11 +29,10 @@
   .checkbox__label {
     font-size: 19px;
     line-height: 18px;
-    }
+  }
 }
 
 @media (min-width: 1150px) {
-
   .checkbox {
     width: 700px;
     padding: 0;

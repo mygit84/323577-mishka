@@ -2,23 +2,22 @@
   display: flex;
   justify-content: space-between;
   width: 260px;
+}
 
-  &__text {
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 30px;
-  }
+.copyright__text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 30px;
+}
 
-  &__link {
-    display: block;
-    width: 30px;
-    height: 40px;
-    background-color: #63d1bb;
-  }
+.copyright__link {
+  display: block;
+  width: 30px;
+  height: 40px;
+  background-color: #63d1bb;
 }
 
 @media (min-width: 768px) {
-
   .copyright {
     width: 185px;
   }
