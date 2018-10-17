@@ -1,13 +1,11 @@
 .page-header {
-  width: auto;
+  width: 100%;
   background-color: #ffffff;
 }
 
-.page-header__logo {
-  display: block;
-  width: 86px;
-  margin: 21px auto;
-  padding: 0 85px;
+.page-header__wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-header__desc {
@@ -16,27 +14,21 @@
 
 @media (min-width: 768px) {
   .page-header {
-    display: flex;
+    height: 90px;
     border-bottom: 1px solid #ececec;
   }
 
-  .page-header__logo {
-    width: 111px;
-    height: 45px;
-    margin: 22px 209px 20px 0;
-    padding: 0;
-    background-image: url("../img/logo-tablet.svg");
-    background-repeat: no-repeat;
-  }
-
-  .page-header__logo-image {
-    display: none;
+  .page-header__wrapper {
+    position: relative;
+    width: 768px;
+    padding: 0 50px;
+    box-sizing: border-box;
   }
 
   .page-header__desc {
     content: "";
     position: absolute;
-    top: 107px;
+    top: 109px;
     right: 53px;
     display: block;
     color: #444444;
@@ -44,20 +36,26 @@
 }
 
 @media (min-width: 1150px) {
-  .page-header__logo {
-    width: 250px;
-    height: 80px;
-    margin: 10px 0 0 450px;
-    background-image: url("../img/logo-desktop.svg");
-    background-repeat: no-repeat;
+  .page-header {
+    border: none;
+  }
+
+  .page-header__wrapper {
+    width: 1150px;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 1150px;
+      border-bottom: 1px solid #ececec;
+    }
   }
 
   .page-header__desc {
-    content: "";
-    position: absolute;
-    top: 107px;
-    right: 105px;
-    display: block;
-    color: #444444;
+    top: 108px;
+    right: 51px;
   }
 }

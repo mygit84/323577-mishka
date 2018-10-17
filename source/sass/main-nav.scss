@@ -2,12 +2,16 @@
   position: relative;
 }
 
-.main-nav__list {
-  width: auto;
+.main-nav__wrapper {
+  width: 320px;
+  border-top: 1px solid #ececec;
 }
 
-.main-nav__wrapper {
-  border-top: 1px solid #ececec;
+.main-nav__logo {
+  display: block;
+  width: 86px;
+  margin: 0 auto;
+  padding: 16px 0 16px 0;
 }
 
 .main-nav__toggle {
@@ -15,21 +19,78 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  top: -50px;
-  left: 267px;
+  top: 24px;
+  left: 268px;
   font-size: 0;
 }
 
 @media (min-width: 768px) {
   .main-nav {
-    width: 348px;
+    width: 668px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .main-nav__list {
+  .main-nav__wrapper {
+    width: 348px;
     display: flex;
+    flex-direction: column-reverse;
+    border: none;
+  }
+
+  .main-nav__logo {
+    width: 320px;
+    height: 45px;
+    margin: 25px 0;
+    margin-left: -3px;
+    padding: 0;
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  .main-nav__logo-image { /*Временно*/
+    display: none;
   }
 
   .main-nav__toggle {
     display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav {
+    width: 1050px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 45px;
+      left: 140px;
+      width: 90px;
+      border-bottom: 1px solid #ececec;
+      transform: rotate(90deg);
+    }
+  }
+
+  .main-nav__wrapper {
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: -90px;
+  }
+
+  .main-nav__logo {
+    position: relative;
+    width: 250px;
+    height: 80px;
+    margin-left: 450px;
+    margin-top: 10px;
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+    z-index: 10;
   }
 }

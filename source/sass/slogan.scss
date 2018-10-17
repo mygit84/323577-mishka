@@ -1,7 +1,8 @@
 .slogan {
   display: inline-block;
   width: 260px;
-  margin: 75px 30px 125px 30px;
+  margin: 0;
+  padding: 72px 30px 120px 30px;
   text-align: center;
   font-size: 27px;
   line-height: 30px;
@@ -11,17 +12,18 @@
 
 @media (min-width: 768px) {
   .slogan {
-    width: 496px;
-    margin: 155px 86px 370px 86px;
+    width: 492px;
+    margin: 0;
+    padding: 155px 86px 374px 86px;
     font-size: 43px;
     line-height: 50px;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .slogan {
     width: 610px;
-    margin: 155px 220px 350px 220px;
+    padding: 155px 220px 359px 220px;
     font-size: 53px;
     line-height: 57px;
   }

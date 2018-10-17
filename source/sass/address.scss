@@ -1,0 +1,37 @@
+.address {
+  width: 260px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 30px;
+}
+
+.address-title {
+  width: 50px;
+}
+
+.address-info {
+  width: 138px;
+  margin-right: 45px;
+}
+
+@media (min-width: 768px) {
+  .address {
+    width: 334px;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    font-size: 17px;
+    text-align: left;
+  }
+
+  .address-title {
+    margin-right: 25px;
+  }
+
+  .address-info {
+    width: 200px;
+    margin: 0;
+  }
+}

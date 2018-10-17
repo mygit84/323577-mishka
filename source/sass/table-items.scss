@@ -1,9 +1,26 @@
 .table-items {
   width: 260px;
+  padding-bottom: 25px;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 768px) {
   .table-items {
+    width: 668px;
+    padding-bottom: 55px;
+
+    &--contacts tbody {
+      width: 668px;
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .table-items {
+    width: 293px;
+    padding-right: 57px;
+    padding-bottom: 107px;
+
     &--contacts {
       padding: 0;
     }

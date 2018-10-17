@@ -1,11 +1,12 @@
 .slider__controls {
   width: 260px;
+  margin: 0;
 }
 
 .slider__control {
   width: 128px;
-  height: 48px;
-  margin-bottom: 38px;
+  height: 48px; /*Временно*/
+  margin-bottom: 54px;
   background-color: #ffffff;
   border: 1px solid #ececec;
 }
@@ -16,7 +17,7 @@
     position: absolute;
     display: flex;
     width: 167px;
-    top: 340px;
+    top: 360px;
     right: 50px;
   }
 
@@ -36,7 +37,7 @@
     position: absolute;
     display: flex;
     width: 167px;
-    top: 300px;
-    right: 100px;
+    top: 310px;
+    right: 50px;
   }
 }

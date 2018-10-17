@@ -1,25 +1,30 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  width: 260px;
+  flex-wrap: wrap;
+  width: 182px;
+  padding: 0 39px;
+  padding-top: 26px;
 }
 
 .copyright__text {
   font-size: 18px;
   font-weight: bold;
-  margin-left: 30px;
 }
 
 .copyright__link {
   display: block;
   width: 30px;
-  height: 40px;
+  height: 32px;
   background-color: #63d1bb;
 }
 
 @media (min-width: 768px) {
   .copyright {
     width: 185px;
+    margin-left: 75px;
+    padding: 0;
+    padding-top: 10px;
   }
 
   .copyright__text {
