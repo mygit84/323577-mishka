@@ -1,18 +1,31 @@
 .row-items {
-  &__cell {
-    width: 98px;
-    font-size: 15px;
-    line-height: 20px;
-    color: #444444;
-  }
+  padding-bottom: 15px;
+  white-space: nowrap;
 
-  &__cell--green {
+  &--gray {
+    display: block;
+    margin-left: -4px;
+    padding: 0;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    line-height: 30px;
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+.row-items__cell {
+  width: 98px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+
+  &--green {
     border-bottom: 1px solid #62d1ba;
   }
 }
 
-.row-items--grey {
-  display: block;
-  padding: 10px 0;
-  border-bottom: 1px solid #ececec;
+@media (min-width: 1150px) {
+  .row-items--gray {
+    padding-bottom: 7px;
+  }
 }

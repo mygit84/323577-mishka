@@ -1,10 +1,30 @@
 .slogan {
   display: inline-block;
   width: 260px;
-  margin: 85px 30px 125px 30px;
+  margin: 0;
+  padding: 72px 30px 120px 30px;
   text-align: center;
   font-size: 27px;
   line-height: 30px;
   color: #000000;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .slogan {
+    width: 492px;
+    margin: 0;
+    padding: 155px 86px 374px 86px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .slogan {
+    width: 610px;
+    padding: 155px 220px 359px 220px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

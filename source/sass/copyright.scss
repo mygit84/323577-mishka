@@ -1,15 +1,33 @@
 .copyright {
-  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 182px;
+  padding: 0 39px;
+  padding-top: 26px;
+}
 
-  &__text {
-    font-size: 18px;
-    font-weight: bold;
+.copyright__text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.copyright__link {
+  display: block;
+  width: 30px;
+  height: 32px;
+  background-color: #63d1bb;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    width: 185px;
+    margin-left: 75px;
+    padding: 0;
+    padding-top: 10px;
   }
 
-  &__link {
-    display: block;
-    width: 30px;
-    height: 40px;
-    background-color: #63d1bb;
+  .copyright__text {
+    font-size: 19px;
   }
 }

@@ -1,5 +1,61 @@
 .page-header {
-  &__logo {
-    width: 95px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.page-header__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__desc {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    height: 90px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .page-header__wrapper {
+    position: relative;
+    width: 768px;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .page-header__desc {
+    content: "";
+    position: absolute;
+    top: 109px;
+    right: 53px;
+    display: block;
+    color: #444444;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header {
+    border: none;
+  }
+
+  .page-header__wrapper {
+    width: 1150px;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 1150px;
+      border-bottom: 1px solid #ececec;
+    }
+  }
+
+  .page-header__desc {
+    top: 108px;
+    right: 51px;
   }
 }

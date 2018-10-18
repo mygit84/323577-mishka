@@ -1,13 +1,43 @@
-.slider {
-  &__controls {
-    width: 260px;
+.slider__controls {
+  width: 260px;
+  margin: 0;
+}
+
+.slider__control {
+  width: 128px;
+  height: 48px; /*Временно*/
+  margin-bottom: 54px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+}
+
+@media (min-width: 768px) {
+  .slider__controls {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 167px;
+    top: 360px;
+    right: 50px;
   }
 
-  &__control {
-    width: 128px;
+  .slider__control {
+    width: 50%;
     height: 48px;
     margin-bottom: 38px;
     background-color: #ffffff;
-    border: 1px solid #ececec;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1250px) {
+  .slider__controls {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 167px;
+    top: 310px;
+    right: 50px;
   }
 }

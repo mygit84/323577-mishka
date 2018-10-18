@@ -1,22 +1,104 @@
 .contacts {
+  width: 100%;
+  padding-top: 61px;
+  padding-bottom: 38px;
+}
+
+.contacts__wrapper {
   width: 320px;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-bottom: 37px;
+  box-sizing: border-box;
+}
 
-  &__title {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 30px;
-    margin-left: 30px;
+.contacts__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.contacts__btn {
+  width: 156px;
+  display: block;
+  margin: 0 auto;
+  padding: 14px 51px;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    padding-top: 147px;
+    padding-bottom: 58px;
   }
 
-  &__table {
-    margin-left: 30px;
-    margin-bottom: 40px;
+  .contacts__wrapper {
+    width: 768px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+    box-sizing: border-box;
   }
 
-  &__btn {
+  .contacts__title {
+    margin: 0;
+    margin-left: -5px;
+    margin-right: 455px;
+    margin-bottom: 49px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__btn {
     display: block;
-    margin: 0 30px;
-    padding: 14px 52px;
+    width: 154px;
+    padding: 14px 36px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 161px 50px 101px 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .contacts__wrapper {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 175px;
+    box-sizing: border-box;
+  }
+
+  .contacts__title {
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 46px;
+    padding: 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__btn {
+    display: block;
+    width: 154px;
+    padding: 14px 36px;
+    margin: 0;
+    margin-top: -55px;
+    margin-left: 175px;
+    text-align: center;
   }
 }

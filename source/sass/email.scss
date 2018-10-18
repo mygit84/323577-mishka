@@ -1,0 +1,46 @@
+.email {
+  width: 260px;
+  margin: 0;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+.email__title {
+  width: 50px;
+}
+
+.email__info {
+  width: 183px;
+  padding-bottom: 3px;
+  text-align: center;
+  border-bottom: 1px solid #62d1ba;
+}
+
+@media (min-width: 768px) {
+  .email {
+    width: 334px;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .email__title {
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .email {
+    margin-bottom: 30px;
+  }
+
+  .email__info {
+    padding-bottom: 0;
+  }
+}
