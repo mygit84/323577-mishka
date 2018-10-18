@@ -33,6 +33,20 @@
   .email__title {
     margin-right: 25px;
   }
+
+  .email__info {
+    position: relative;
+    padding-bottom: 0;
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      width: 201px;
+      border-bottom: 1px solid #62d1ba;
+    }
+  }
 }
 
 @media (min-width: 1150px) {
@@ -42,5 +56,7 @@
 
   .email__info {
     padding-bottom: 0;
+    border: none;
+    &::before {}
   }
 }

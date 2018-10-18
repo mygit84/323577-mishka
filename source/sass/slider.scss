@@ -1,11 +1,13 @@
 .slider__controls {
   width: 260px;
   margin: 0;
+  display: flex;
+  align-items: flex-start;
 }
 
 .slider__control {
-  width: 128px;
-  height: 48px; /*Временно*/
+  width: 50%;
+  height: 50px; /*Временно*/
   margin-bottom: 54px;
   background-color: #ffffff;
   border: 1px solid #ececec;

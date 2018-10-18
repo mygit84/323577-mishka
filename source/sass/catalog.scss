@@ -17,6 +17,7 @@
   .catalog {
     width: 768px;
     padding: 85px 50px 0 50px;
+    box-sizing: border-box;
   }
 
   .catalog__list {
@@ -29,6 +30,7 @@
   .catalog {
     width: 1150px;
     padding-top: 135px;
+    box-sizing: border-box;
   }
 
   .catalog__list {
