@@ -7,10 +7,22 @@
 
 .slider__control {
   width: 50%;
-  height: 50px; /*Временно*/
+  height: 50px;
   margin-bottom: 54px;
   background-color: #ffffff;
   border: 1px solid #ececec;
+
+  &--left {
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--right {
+    background-image: url("../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -18,7 +30,7 @@
     content: "";
     position: absolute;
     display: flex;
-    width: 167px;
+    width: 176px;
     top: 360px;
     right: 50px;
   }
@@ -30,6 +42,14 @@
     background-color: #ffffff;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -38,7 +58,7 @@
     content: "";
     position: absolute;
     display: flex;
-    width: 167px;
+    width: 176px;
     top: 310px;
     right: 50px;
   }

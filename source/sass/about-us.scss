@@ -1,8 +1,21 @@
 .about-us {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   padding: 32px 30px 28px 30px;
   box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 23px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .about-us__list {
@@ -23,7 +36,7 @@
   padding-top: 54px;
   padding-bottom: 21px;
 
-/*  &--materials::after {
+  &--materials::after {
     content: "";
     position: absolute;
     width: 34px;
@@ -65,7 +78,29 @@
     left: 3px;
     background-image: url("../img/icon-feature-ball.svg");
     background-repeat: no-repeat;
-  }*/
+  }
+
+  &--maker::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 35px;
+    top: 5px;
+    left: -6px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--gift-box::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 35px;
+    top: 5px;
+    left: 4px;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .about-us__text {
@@ -80,6 +115,10 @@
     width: 768px;
     padding: 60px 50px 35px 50px;
     box-sizing: border-box;
+
+    &::after {
+      width: 768px;
+    }
   }
 
   .about-us__wrapper {
@@ -87,6 +126,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .about-us__title {
+    margin-left: -4px;
   }
 
   .about-us__list {
@@ -101,6 +144,31 @@
     width: 294px;
     margin: 0;
     padding: 61px 0 45px 0;
+
+    &--materials::after {
+      top: 10px;
+    }
+
+    &--style::after {
+      top: 12px;
+    }
+
+    &--more-like::after {
+      top: 16px;
+      left: 8px;
+    }
+
+    &--skein::after {
+      top: 14px;
+    }
+
+    &--maker::after {
+      top: 15px;
+    }
+
+    &--gift-box::after {
+      top: 13px;
+    }
   }
 
   .about-us__text {
@@ -114,6 +182,12 @@
     width: 1150px;
     padding-top: 73px;
     padding-bottom: 41px;
+
+    &::after {
+      width: 1050px;
+      top: -7px;
+      left: 50px;
+    }
   }
 
   .about-us__title {

@@ -4,7 +4,7 @@
 
 .page-main__title-wrapper {
   width: 100%;
-  padding-top: 70px;
+  padding-top: 69px;
   padding-bottom: 76px;
   background-color: #f1f1f1;
 }
@@ -39,6 +39,7 @@
 @media (min-width: 768px) {
   .page-main__title-wrapper {
     padding-top: 95px;
+    padding-bottom: 80px;
   }
 
   .page-main__title {
@@ -52,28 +53,39 @@
   .page-main__wrapper {
     width: 100%;
     padding: 0;
-    padding-top: 78px;
   }
 
   .page-main__text {
+    position: relative;
+    display: block;
     width: 768px;
     margin: 0 auto;
     padding: 0 50px;
+    padding-top: 73px;
     padding-bottom: 15px;
     font-size: 17px;
     line-height: 30px;
     box-sizing: border-box;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 768px;
+      height: 23px;
+      margin: 0 auto;
+      top: -10px;
+      left: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 }
 
 @media (min-width: 1150px) {
-
   .page-main__title-wrapper {
     padding: 95px 0;
-  }
-
-  .page-main__wrapper {
-    padding-top: 129px;
+    padding-bottom: 100px;
   }
 
   .page-main__title {
@@ -90,9 +102,17 @@
   }
 
   .page-main__text {
-    width: 700px;
+    width: 1150px;
+    padding: 0 225px;
+    padding-top: 124px;
     font-size: 17px;
     line-height: 30px;
-    padding: 0;
+
+    &::after {
+      width: 1150px;
+      height: 46px;
+      top: -15px;
+      left: 0;
+    }
   }
 }

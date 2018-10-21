@@ -15,9 +15,22 @@
 
 @media (min-width: 768px) {
   .catalog {
+    position: relative;
     width: 768px;
-    padding: 85px 50px 0 50px;
+    padding: 81px 50px 0 50px;
     box-sizing: border-box;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 768px;
+      height: 23px;
+      top: -10px;
+      left: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   .catalog__list {
@@ -29,8 +42,14 @@
 @media (min-width: 1150px) {
   .catalog {
     width: 1150px;
-    padding-top: 135px;
+    padding-top: 130px;
     box-sizing: border-box;
+
+    &::after {
+      width: 1150px;
+      height: 46px;
+      top: -15px;
+    }
   }
 
   .catalog__list {

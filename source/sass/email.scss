@@ -6,6 +6,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   white-space: nowrap;
+  color: #444444;
 }
 
 .email__title {
@@ -16,6 +17,8 @@
   width: 183px;
   padding-bottom: 3px;
   text-align: center;
+  color: #444444;
+  text-decoration: none;
   border-bottom: 1px solid #62d1ba;
 }
 
@@ -38,6 +41,8 @@
     position: relative;
     padding-bottom: 0;
     border: none;
+    text-decoration: none;
+    color: #444444;
 
     &::before {
       content: "";
@@ -45,6 +50,14 @@
       top: 30px;
       width: 201px;
       border-bottom: 1px solid #62d1ba;
+    }
+
+    &:hover {
+      color: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
@@ -57,6 +70,5 @@
   .email__info {
     padding-bottom: 0;
     border: none;
-    &::before {}
   }
 }

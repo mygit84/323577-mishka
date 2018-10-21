@@ -15,11 +15,21 @@
 }
 
 .form__title {
+  position: relative;
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 60px;
+    width: 200px;
+    border-top: 1px solid #63d1bb;
+  }
 }
 
 .form__box {
@@ -57,6 +67,10 @@
   font-size: 17px;
   border: none;
   border-bottom: 2px solid #000000;
+
+  &:focus {
+    border-bottom: 2px solid #62d1ba;
+  }
 }
 
 .form__textarea {
@@ -68,6 +82,10 @@
   padding-top: 15px;
   padding-left: 15px;
   border: 2px solid #000000;
+
+  &:focus {
+    border: 2px solid #62d1ba;
+  }
 }
 
 .form__required {
@@ -133,6 +151,10 @@
 
   .form__title {
     line-height: 16px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .form__box {
@@ -168,6 +190,14 @@
       padding: 0;
       padding-left: 18px;
       padding-bottom: 11px;
+
+      &:hover {
+        padding-bottom: 10px;
+      }
+
+      &:focus {
+        padding-bottom: 11px;
+      }
     }
   }
 
@@ -184,6 +214,16 @@
     padding: 0;
     padding-left: 16px;
     padding-bottom: 12px;
+
+    &:hover {
+      padding-bottom: 11px;
+      border-bottom: 3px solid #62d1ba;
+    }
+
+    &:focus {
+      padding-bottom: 12px;
+      border-bottom: 2px solid #62d1ba;
+    }
   }
 
   .form__textarea {
@@ -195,6 +235,11 @@
     line-height: 18px;
     padding-top: 12px;
     padding-left: 15px;
+
+    &:hover,
+    &:focus {
+      border: 2px solid #62d1ba;
+    }
   }
 
   .form__footer {
@@ -280,6 +325,14 @@
 
   .form__input {
     padding-bottom: 13px;
+
+    &:hover {
+      padding-bottom: 12px;
+    }
+
+    &:focus {
+      padding-bottom: 13px;
+    }
   }
 
   .form__title {

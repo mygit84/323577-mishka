@@ -73,6 +73,14 @@
     margin: 0;
     border: none;
 
+    &:hover + .product__box {
+      box-shadow: 0 0 10px 6px #ebebeb;
+    }
+
+    &:active + .product__box {
+      box-shadow: 0 10px 6px 0 #ebebeb;
+    }
+
     &--hare {
       background-image: url("../img/photo-hare-tablet@1x.jpg");
     }
@@ -96,11 +104,27 @@
     padding: 24px 50px 20px 25px;
     box-sizing: border-box;
     border: none;
+
+    &:hover {
+      box-shadow: 0 0 10px 6px #ebebeb;
+    }
+
+    &:active {
+      box-shadow: 0 10px 6px 0 #ebebeb;
+    }
   }
 
   .product__title {
     font-size: 20px;
     margin-bottom: 5px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .product__param {

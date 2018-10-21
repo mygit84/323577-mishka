@@ -1,5 +1,36 @@
 .main-nav {
   position: relative;
+
+  &--closed .main-nav__toggle {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 21px;
+    height: 21px;
+    padding: 0;
+    top: 26px;
+    left: 269px;
+    background-color: #ffffff;
+    border: none;
+    background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  &--opened .main-nav__toggle {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    padding: 0;
+    top: 23px;
+    left: 268px;
+    background-color: #ffffff;
+    border: none;
+    background-image: url("../img/icon-menu-close.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
 }
 
 .main-nav__wrapper {
@@ -14,14 +45,16 @@
   padding: 16px 0 16px 0;
 }
 
-.main-nav__toggle {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 24px;
-  left: 268px;
-  font-size: 0;
+@media (max-width: 767px) {
+  .main-nav {
+    &--closed .main-nav__wrapper {
+      display: none;
+    }
+
+    &--nojs .main-nav__toggle {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -48,13 +81,21 @@
     padding: 0;
     background-image: url("../img/logo-tablet.svg");
     background-repeat: no-repeat;
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__logo-image { /*Временно*/
     display: none;
   }
 
-  .main-nav__toggle {
+  .main-nav .main-nav__toggle {
     display: none;
   }
 }

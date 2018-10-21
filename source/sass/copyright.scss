@@ -14,9 +14,21 @@
 
 .copyright__link {
   display: block;
-  width: 30px;
-  height: 32px;
-  background-color: #63d1bb;
+  width: 38px;
+  height: 39px;
+  margin-top: -5px;
+  margin-right: -5px;
+  background-image: url("../img/htmlacademy.svg");
+  background-size: cover;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -24,10 +36,15 @@
     width: 185px;
     margin-left: 75px;
     padding: 0;
-    padding-top: 10px;
   }
 
   .copyright__text {
+    margin-top: 10px;
     font-size: 19px;
+  }
+
+  .copyright__link {
+    margin-top: 5px;
+    margin-right: -4px;
   }
 }
