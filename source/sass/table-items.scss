@@ -1,11 +1,11 @@
 .table-items {
   width: 260px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
 }
 
 @media (min-width: 768px) {
   .table-items {
-    width: 668px;
+    width: 290px;
     padding-bottom: 55px;
 
     &--contacts tbody {
@@ -19,7 +19,7 @@
   .table-items {
     width: 293px;
     padding-right: 57px;
-    padding-bottom: 107px;
+    padding-bottom: 105px;
 
     &--contacts {
       padding: 0;

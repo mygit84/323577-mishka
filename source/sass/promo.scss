@@ -19,9 +19,10 @@
 }
 
 .promo__title {
+  position: relative;
   width: 130px;
   display: block;
-  padding: 27px 160px 27px 30px;
+  padding: 26px 160px 29px 30px;
   font-size: 19px;
   font-weight: bold;
   color: #ffffff;
@@ -32,8 +33,32 @@
     background-color: #63d1bb;
   }
 
+  &--light-green::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 244px;
+    width: 50px;
+    height: 70px;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+  }
+
   &--dark-green {
     background-color: #56c3b2;
+  }
+
+  &--dark-green::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 234px;
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    opacity: 0.7;
   }
 }
 
@@ -41,6 +66,7 @@
   .promo__container {
     width: 768px;
     padding: 0 50px;
+    padding-bottom: 5px;
     box-sizing: border-box;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0;
@@ -53,11 +79,61 @@
     justify-content: space-between;
   }
 
+  .promo__item {
+    padding-top: 5px;
+  }
+
   .promo__title {
     width: 112px;
-    padding: 26px 187px 26px 35px;
+    padding: 26px 187px 31px 35px;
     font-size: 20px;
     line-height: 30px;
+
+    &--light-green:hover {
+      background-color: #59d5bc;
+    }
+
+    &--light-green::before {
+      top: 28px;
+      left: 257px;
+    }
+
+    &--light-green:hover::before {
+      opacity: 1;
+    }
+
+    &--light-green:active::before {
+      opacity: 0.3;
+    }
+
+    &--dark-green:hover {
+      background-color: #46c1ae;
+    }
+
+    &--dark-green::before {
+      top: 29px;
+      left: 240px;
+    }
+
+    &--dark-green:hover::before {
+      opacity: 1;
+    }
+
+    &--dark-green:active::before {
+      opacity: 0.3;
+    }
+
+    &:hover {
+      margin-top: -5px;
+      padding-top: 21px;
+      padding-bottom: 41px;
+    }
+
+    &:active {
+      margin-top: 0;
+      padding: 26px 187px 31px 35px;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
@@ -75,5 +151,19 @@
   .promo__title {
     width: 115px;
     padding-right: 375px;
+
+    &--light-green::before {
+      top: 28px;
+      left: 448px;
+    }
+
+    &--dark-green::before {
+      top: 29px;
+      left: 429px;
+    }
+
+    &:active {
+      padding-right: 375px;
+    }
   }
 }

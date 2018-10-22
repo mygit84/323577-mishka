@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  color: #444444;
   line-height: 30px;
 }
 
@@ -12,8 +13,8 @@
 }
 
 .address-info {
-  width: 138px;
-  margin-right: 45px;
+  width: 142px;
+  margin-right: 41px;
 }
 
 @media (min-width: 768px) {

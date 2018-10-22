@@ -1,20 +1,33 @@
 .contacts {
   width: 100%;
-  padding-top: 61px;
+  padding-top: 57px;
   padding-bottom: 38px;
 }
 
 .contacts__wrapper {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   padding: 0 30px;
   padding-bottom: 37px;
   box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -43px;
+    left: 0;
+    width: 320px;
+    height: 23px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -40,17 +53,34 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
     box-sizing: border-box;
+
+    &::after {
+      top: -75px;
+      width: 768px;
+    }
   }
 
   .contacts__title {
+    position: relative;
     margin: 0;
     margin-left: -5px;
     margin-right: 455px;
     margin-bottom: 49px;
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 623px;
+      width: 47px;
+      height: 85px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .contacts__btn {
@@ -65,7 +95,7 @@
   .contacts {
     width: 1150px;
     margin: 0 auto;
-    padding: 161px 50px 101px 50px;
+    padding: 160px 50px 103px 50px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -81,15 +111,26 @@
     margin: 0;
     padding-left: 175px;
     box-sizing: border-box;
+
+    &::after {
+      top: -95px;
+      width: 1050px;
+    }
   }
 
   .contacts__title {
     margin: 0;
     margin-top: 70px;
+    margin-left: -4px;
     margin-bottom: 46px;
     padding: 0;
     font-size: 53px;
     line-height: 57px;
+
+    &::after {
+      top: -8px;
+      left: -109px;
+    }
   }
 
   .contacts__btn {
