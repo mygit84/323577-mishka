@@ -39,9 +39,9 @@
   background-image: url("../img/video-mobile@1x.jpg");
   background-size: contain;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/video-mobile@2x.jpg");
-    }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
 }
 
 .video__btn-play {
