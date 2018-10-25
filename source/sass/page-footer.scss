@@ -17,9 +17,6 @@
 }
 
 @media (min-width: 768px) {
-  /*.page-footer {
-    padding-top: 50px;
-  }*/
   .page-footer__wrapper {
     width: 768px;
     padding: 50px 50px;
@@ -32,6 +29,18 @@
   .page-footer__logo {
     display: block;
     width: 105px;
+
+    &[href]:hover .page-footer__logo-image {
+      fill:#46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__logo-image {
+    fill: #231f20;
   }
 
   .page-footer__copyright {

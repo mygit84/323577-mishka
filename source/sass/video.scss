@@ -160,8 +160,8 @@
       width: 80px;
       height: 61px;
       margin: 200px auto;
-      background-image: linear-gradient(rgba(255, 255, 255, 0.3)),
-        url("../img/icon-play.svg");
+      background-image: url("../img/icon-play.svg");
+      opacity: 0.5;
     }
   }
 

@@ -51,9 +51,21 @@
 }
 
 .product__btn {
-  width: 25px;
-  height: 24px;
-  font-size: 0;
+  display: block;
+  width: 21px;
+  height: 19px;
+
+  &:hover .product__btn-icon {
+    fill: #63d1bb;
+  }
+
+  &:active .product__btn-icon {
+    opacity: 0.3;
+  }
+}
+
+.product__btn-icon {
+  fill: #dedede;
 }
 
 @media (min-width: 768px) {
@@ -121,16 +133,16 @@
   }
 
   .product__inner {
-    width: 271px;
+    width: 270px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 174px;
+    margin-top: 176px;
     margin-left: 7px;
     padding-top: 22px;
 
     &--shot {
-      margin-top: 149px;
+      margin-top: 151px;
     }
   }
 
