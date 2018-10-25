@@ -53,6 +53,10 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: 45% 100%;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__wrapper {
@@ -113,6 +117,10 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: 33% 100%;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__container {

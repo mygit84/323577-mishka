@@ -51,6 +51,10 @@
       display: none;
     }
 
+    &--nojs .main-nav__wrapper {
+      display: block;
+    }
+
     &--nojs .main-nav__toggle {
       display: none;
     }
@@ -74,13 +78,11 @@
   }
 
   .main-nav__logo {
-    width: 320px;
-    height: 45px;
-    margin: 25px 0;
-    margin-left: -3px;
+    width: 112px;
+    margin: 0;
+    margin-left: -2px;
     padding: 0;
-    background-image: url("../img/logo-tablet.svg");
-    background-repeat: no-repeat;
+    padding-top: 25px;
 
     &[href]:hover {
       opacity: 0.6;
@@ -91,8 +93,9 @@
     }
   }
 
-  .main-nav__logo-image { /*Временно*/
-    display: none;
+  .main-nav__logo-image {
+    width: 112px;
+    height: 46px;
   }
 
   .main-nav .main-nav__toggle {
@@ -120,18 +123,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    flex-wrap: wrap;
     margin-top: -90px;
   }
 
   .main-nav__logo {
-    position: relative;
-    width: 250px;
-    height: 80px;
-    margin-left: 450px;
-    margin-top: 10px;
-    background-image: url("../img/logo-desktop.svg");
-    background-repeat: no-repeat;
+    position: absolute;
+    width: 148px;
+    top: -15px;
+    left: 452px;
     z-index: 10;
+  }
+
+  .main-nav__logo-image {
+    width: 148px;
+    height: 73px;
   }
 }

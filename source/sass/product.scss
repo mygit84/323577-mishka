@@ -80,22 +80,11 @@
     &:active + .product__box {
       box-shadow: 0 10px 6px 0 #ebebeb;
     }
-
-    &--hare {
-      background-image: url("../img/photo-hare-tablet@1x.jpg");
-    }
-
-    &--bowl {
-      background-image: url("../img/photo-bowl-tablet@1x.jpg");
-    }
-
-    &--toys {
-      background-image: url("../img/photo-toys-tablet@1x.jpg");
-    }
   }
 
   .product__image {
-    display: none;
+    width: 333px;
+    height: 332px;
   }
 
   .product__box {
@@ -164,20 +153,11 @@
   .product__link {
     width: 314px;
     height: 463px;
-    margin: 0;
-    border: none;
+  }
 
-    &--hare {
-      background-image: url("../img/photo-hare-desktop@1x.jpg");
-    }
-
-    &--bowl {
-      background-image: url("../img/photo-bowl-desktop@1x.jpg");
-    }
-
-    &--toys {
-      background-image: url("../img/photo-toys-desktop@1x.jpg");
-    }
+  .product__image {
+    width: 314px;
+    height: 463px;
   }
 
   .product__box {
