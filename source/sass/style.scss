@@ -1,66 +1,31 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open San";
-  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-html,
-body {
-  min-width: 320px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 24px;
-
-  background-color: #ffffff;
-  color: #000000;
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-
 @import "normalize";
-@import "container";
-@import "page-header";
-@import "main-nav";
-@import "site-list";
-@import "page-main";
-@import "promo";
-@import "slogan";
-@import "title";
-@import "week-product";
-@import "table-items";
-@import "row-items";
-@import "about-us";
-@import "reviews";
-@import "slider";
-@import "contacts";
-@import "email";
-@import "address";
-@import "map";
-@import "button";
-@import "catalog";
-@import "product";
-@import "video";
-@import "form";
-@import "radiobutton";
-@import "checkbox";
-@import "page-footer";
-@import "social";
-@import "copyright";
-@import "modal";
-@import "modal-basket";
-@import "visually-hidden";
+@import "global";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/page-main";
+@import "blocks/promo";
+@import "blocks/slogan";
+@import "blocks/title";
+@import "blocks/week-product";
+@import "blocks/table-items";
+@import "blocks/row-items";
+@import "blocks/about-us";
+@import "blocks/reviews";
+@import "blocks/slider";
+@import "blocks/contacts";
+@import "blocks/email";
+@import "blocks/address";
+@import "blocks/map";
+@import "blocks/button";
+@import "blocks/catalog";
+@import "blocks/product";
+@import "blocks/video";
+@import "blocks/form";
+@import "blocks/radiobutton";
+@import "blocks/checkbox";
+@import "blocks/page-footer";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/modal";
+@import "blocks/modal-basket";
