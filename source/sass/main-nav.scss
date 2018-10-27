@@ -45,6 +45,11 @@
   padding: 16px 0 16px 0;
 }
 
+.main-nav__logo-image {
+  width: 86px;
+  height: 36px;
+}
+
 @media (max-width: 767px) {
   .main-nav {
     &--closed .main-nav__wrapper {
