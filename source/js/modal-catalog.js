@@ -9,7 +9,10 @@ var modalOpen = function () {
   var elements = document.querySelectorAll('.product__btn');
   for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
-    element.addEventListener('click', function() {
+    element.addEventListener('click', function(evt) {
+
+      evt.preventDefault();
+
       modal.classList.remove('modal--closed');
       modal.classList.add('modal--opened');
       overlay.classList.add('modal__overlay--show');

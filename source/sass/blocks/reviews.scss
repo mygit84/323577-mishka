@@ -8,7 +8,7 @@
 
 .reviews__wrapper {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .reviews__container {
@@ -19,7 +19,7 @@
 }
 
 .reviews__text {
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   font-size: 15px;
   font-weight: normal;
   line-height: 30px;
@@ -41,7 +41,7 @@
   content: "";
   position: absolute;
   top: 526px;
-  padding: 14px 81px;
+  padding: 14px 83px;
 }
 
 @media (min-width: 768px) {
@@ -96,7 +96,7 @@
     top: 0;
     left: 0;
     margin-right: -2px;
-    padding: 14px 39px;
+    padding: 14px 40px;
   }
 }
 
@@ -111,7 +111,7 @@
   .reviews__wrapper {
     width: 1050px;
     justify-content: space-between;
-    padding: 73px 0 100px 175px;
+    padding: 72px 0 100px 175px;
     box-sizing: border-box;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
