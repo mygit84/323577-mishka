@@ -5,13 +5,15 @@
     <title>Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js"></script>
   </head>
 
   <body>
     <svg style="display:none">
-      <include src="source/img/sprite.svg"></include>
+      <include src="build/img/sprite.svg"></include>
     </svg>
     <header class="page-header">
       <div class="page-header__wrapper">
@@ -201,7 +203,7 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
           <svg class="page-footer__logo-image" width="102" height="35">
-            <use xlink:href="#logo-footer"></use>
+            <use xlink:href="#icon-logo-footer"></use>
           </svg>
         </a>
         <div class="page-footer__social social">
@@ -213,33 +215,33 @@
                 </svg>
                 <span class="visually-hidden">Мы в Инстаграме</span>
               </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                  <svg class="social__link-icon" width="15" height="28">
-                    <use xlink:href="#icon-fb"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Фейсбуке</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">
-                  <svg class="social__link-icon" width="24" height="21">
-                    <use xlink:href="#icon-twitter"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Твитере</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <b class="copyright__text">Разработано</b>
-              <span class="visually-hidden">HTML Academy</span>
-            </a>
-          </div>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <svg class="social__link-icon" width="15" height="28">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">
+                <svg class="social__link-icon" width="24" height="21">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Твитере</span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </footer>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            Разработано
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
 
 
     <section class="modal modal--closed modal--nojs modal-basket">

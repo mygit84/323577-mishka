@@ -37,7 +37,7 @@
     border-radius: 50%;
   }
 
-  &:hover::after {
+  &:focus::after {
     border-color: #62d1ba;
   }
 
@@ -47,7 +47,11 @@
 }
 
 .radiobutton__input {
-  display: none;
+  opacity: 0;
+
+  &:focus + .radiobutton__label::after {
+    border-color: #62d1ba;
+  }
 
   &:checked + .radiobutton__label::before {
     display: block;

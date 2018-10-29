@@ -1,29 +1,29 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   width: 182px;
   padding: 0 39px;
   padding-top: 26px;
 }
 
-.copyright__text {
-  font-size: 18px;
-  font-weight: bold;
-}
-
 .copyright__link {
+  position: relative;
   display: block;
-  width: 38px;
-  height: 39px;
   margin-top: -5px;
   margin-right: -5px;
-  background-image: url("../img/htmlacademy.svg");
-  background-size: cover;
-  opacity: 0.8;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
 
-  &:hover {
-    opacity: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 42px;
+    top: -3px;
+    right: 0;
+    background-image: url("../img/htmlacademy.svg");
+    background-size: cover;
+    opacity: 0.8;
   }
 
   &:active {
@@ -38,13 +38,22 @@
     padding: 0;
   }
 
-  .copyright__text {
+  .copyright__link {
     margin-top: 10px;
     font-size: 19px;
-  }
 
-  .copyright__link {
-    margin-top: 5px;
-    margin-right: -4px;
+    &::before {
+      width: 38px;
+      height: 41px;
+      top: -5px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:hover ~ &::before {
+      opacity: 1;
+    }
   }
 }
