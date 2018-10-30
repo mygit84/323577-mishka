@@ -80,11 +80,11 @@
             <span class="form__title">Тип</span>
             <ul class="form__list  radiobutton">
               <li class="radiobutton__item">
-                <input class="radiobutton__input" type="checkbox" name="accessories" id="accessories" tabindex="9">
+                <input class="radiobutton__input" type="radio" name="type" value="accessories" id="accessories" tabindex="9">
                 <label class="radiobutton__label" for="accessories">Аксессуары для интерьера</label>
               </li>
               <li class="radiobutton__item">
-                <input class="radiobutton__input" type="checkbox" name="toys" id="toys"  tabindex="10">
+                <input class="radiobutton__input" type="radio" name="type" value="toys" id="toys"  tabindex="10">
                 <label class="radiobutton__label" for="toys">Детская игрушка</label>
               </li>
             </ul>
@@ -205,8 +205,12 @@
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            Разработано
+            <span class="copyright-text">Разработано</span>
             <span class="visually-hidden">HTML Academy</span>
+            <svg class="copyright__image" width="29" height="37">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg>
+          </a>
           </a>
         </div>
       </div>

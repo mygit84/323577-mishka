@@ -46,6 +46,8 @@
 }
 
 .checkbox__input {
+  position: absolute;
+  z-index: -1;
   opacity: 0;
 
   &:focus + .checkbox__label::after {
