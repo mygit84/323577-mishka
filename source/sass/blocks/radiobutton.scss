@@ -47,6 +47,8 @@
 }
 
 .radiobutton__input {
+  position: absolute;
+  z-index: -1;
   opacity: 0;
 
   &:focus + .radiobutton__label::after {
