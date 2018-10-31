@@ -46,11 +46,15 @@
   font-weight: bold;
   color: #444444;
   text-align: center;
-  border: 1px solid #ececec;
+  border: 2px solid #ececec;
+
+  &:hover {
+    border: 2px solid #c7c7c7;
+  }
 }
 
 input[type="checkbox"]:checked ~ .modal-basket__checkbox {
-  border: 1px solid #63d1bb;
+  border: 2px solid #63d1bb;
 }
 
 .modal-basket__btn {

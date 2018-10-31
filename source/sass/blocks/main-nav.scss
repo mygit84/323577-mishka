@@ -8,7 +8,7 @@
     width: 21px;
     height: 21px;
     padding: 0;
-    top: 26px;
+    top: 32px;
     left: 269px;
     background-color: #ffffff;
     border: none;
@@ -42,7 +42,7 @@
   display: block;
   width: 86px;
   margin: 0 auto;
-  padding: 16px 0 16px 0;
+  padding: 21px 0 15px 0;
 }
 
 .main-nav__logo-image {
@@ -83,11 +83,12 @@
   }
 
   .main-nav__logo {
-    width: 112px;
+    width: 114px;
     margin: 0;
+    height: 46px;
     margin-left: -2px;
     padding: 0;
-    padding-top: 25px;
+    padding-top: 22px;
 
     &[href]:hover {
       opacity: 0.6;
@@ -135,7 +136,8 @@
   .main-nav__logo {
     position: absolute;
     width: 148px;
-    top: -15px;
+    height: 73px;
+    top: -13px;
     left: 452px;
     z-index: 10;
   }

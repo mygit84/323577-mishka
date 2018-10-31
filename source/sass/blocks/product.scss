@@ -7,7 +7,7 @@
 
 .product__link {
   display: block;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 
 .product__image {
@@ -22,7 +22,7 @@
 
 .product__title {
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 4px;
   font-size: 17px;
   font-weight: bold;
   text-decoration: none;
@@ -42,6 +42,10 @@
   margin-top: 19px;
   padding-top: 20px;
   border-top: 1px solid #ececec;
+
+  &--shot {
+    padding-top: 22px;
+  }
 }
 
 .product__price {
@@ -83,7 +87,7 @@
     }
 
     &:active {
-      box-shadow: 0 10px 6px 0 #ebebeb;
+      box-shadow: 0 5px 3px 0 #ebebeb;
     }
   }
 
@@ -102,14 +106,14 @@
   .product__box {
     width: 331px;
     margin: 0;
-    padding: 24px 50px 20px 25px;
+    padding: 24px 48px 20px 27px;
     box-sizing: border-box;
     border: none;
   }
 
   .product__title {
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 
     &:hover {
       opacity: 0.6;
@@ -130,7 +134,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 176px;
-    margin-left: 7px;
+    margin-left: 5px;
     padding-top: 22px;
 
     &--shot {
@@ -145,12 +149,13 @@
 
 @media (min-width: 1150px) {
   .product {
-    width: 316px;
+    width: 315px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 0;
+    margin-left: 50px;
     border: 1px solid #ececec;
   }
 

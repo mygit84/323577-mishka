@@ -12,6 +12,7 @@
   list-style: none;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .social__link {
@@ -53,12 +54,24 @@
 
 @media (min-width: 768px) {
   .social {
+    width: 150px;
+    margin: 0;
+    margin-left: 75px;
     border: none;
   }
 
   .social__list {
-    width: 150px;
-    margin: 0;
-    margin-left: 129px;
+    margin: 0 auto;
+  }
+
+  .social__link {
+    &--instagram {
+      margin-top: 11px;
+      margin-left: 3px;
+    }
+
+    &--twitter {
+      margin-top: 11px;
+    }
   }
 }

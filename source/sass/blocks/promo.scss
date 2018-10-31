@@ -17,7 +17,6 @@
   }
 }
 
-
 .promo__list {
   list-style: none;
   margin: 0;
@@ -26,9 +25,10 @@
 
 .promo__title {
   position: relative;
-  width: 130px;
+  width: 320px;
   display: block;
   padding: 26px 160px 29px 30px;
+  box-sizing: border-box;
   font-size: 19px;
   font-weight: bold;
   color: #ffffff;
@@ -95,8 +95,9 @@
   }
 
   .promo__title {
-    width: 112px;
+    width: 334px;
     padding: 26px 187px 31px 35px;
+    box-sizing: border-box;
     font-size: 20px;
     line-height: 30px;
 
@@ -165,8 +166,9 @@
   }
 
   .promo__title {
-    width: 115px;
+    width: 525px;
     padding-right: 375px;
+    box-sizing: border-box;
 
     &--light-green::before {
       top: 28px;
